@@ -2,6 +2,10 @@
 input/*
 output/*
 
+# exception to the rule to keep te folder structure
+!input/.gitkeep
+!output/.gitkeep
+
 # ignore google vision key file and backup file
 myOCR-57d1f64c5fbf.json
 backup.txt

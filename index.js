@@ -10,7 +10,8 @@ var recursive = require('recursive-readdir');
 let numFiles = 1;
 
 //search for all file in the input directory
-recursive('./input', ['input/.DS_Store'], function (err, files) {
+recursive('./input', ['input/.DS_Store', '.gitkeep'], function (err, files) {
+  console.log('starting processing...');
   files.forEach(function(file){
     // The path to the local image file, e.g. "/path/to/image.png"
     const fileName = './'+file;
