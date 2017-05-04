@@ -3,7 +3,7 @@ const vision = require('@google-cloud/vision')({
   //projectId: 'your-google-cloud-project-id-here',
   //keyFilename: 'your-google-cloud-json-key-file-name-here'
   projectId: 'myocr-166323',
-keyFilename: './myOCR-57d1f64c5fbf.json'
+  keyFilename: './secrets/myOCR-57d1f64c5fbf.json'
 });
 
 const fs = require ('fs');
