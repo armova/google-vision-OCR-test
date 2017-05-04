@@ -13,7 +13,7 @@ Checkout how to set up your Google Cloud Vision account and project:
 Will need a JSON Service Account key:
 [https://cloud.google.com/vision/docs/common/auth](https://cloud.google.com/vision/docs/common/auth)
 
-Overwrite `projectId` & `keyFilename in index.js
+Overwrite `projectId` & `keyFilename` in index.js
 
 ---
 #### Run

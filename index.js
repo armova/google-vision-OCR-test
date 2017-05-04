@@ -1,7 +1,9 @@
 const vision = require('@google-cloud/vision')({
   // make sure to review https://cloud.google.com/vision/docs/quickstart
-  projectId: 'your-google-cloud-project-id-here',
-  keyFilename: 'your-google-cloud-json-key-file-name-here'
+  //projectId: 'your-google-cloud-project-id-here',
+  //keyFilename: 'your-google-cloud-json-key-file-name-here'
+  projectId: 'myocr-166323',
+keyFilename: './myOCR-57d1f64c5fbf.json'
 });
 
 const fs = require ('fs');
@@ -24,7 +26,7 @@ function transform(fileName){
   vision.readDocument(fileName)
   .then((results) => {
     const fullTextAnnotation = results[1].responses[0].fullTextAnnotation;
-    const name = fileName+'.text';
+    const name = 'file'+numFiles+'.txt';
     // write the text file in the ooutput directory
     fs.writeFile('./output/'+name , fullTextAnnotation.text, (err) => {
       if (err) throw err;
