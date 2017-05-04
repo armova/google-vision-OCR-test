@@ -1,9 +1,7 @@
 const vision = require('@google-cloud/vision')({
   // make sure to review https://cloud.google.com/vision/docs/quickstart
-  //projectId: 'your-google-cloud-project-id-here',
-  //keyFilename: 'your-google-cloud-json-key-file-name-here'
-  projectId: 'myocr-166323',
-  keyFilename: './secrets/myOCR-57d1f64c5fbf.json'
+  projectId: 'your-google-cloud-project-id-here',
+  keyFilename: 'your-google-cloud-json-key-file-name-here'
 });
 
 const fs = require ('fs');
