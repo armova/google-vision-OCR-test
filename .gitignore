@@ -1,6 +1,6 @@
 # ignore all files in the input and output directories
-input/
-output/
+input/*
+output/*
 
 # ignore google vision key file and backup file
 myOCR-57d1f64c5fbf.json
